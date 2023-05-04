@@ -1,0 +1,43 @@
+/* Add background color based on temperature */
+div.weather-forecast {
+    background-color: #f9f9f9;
+  }
+  
+  div.weather-forecast.cold {
+    background-color: #9ac4f8;
+  }
+  
+  div.weather-forecast.warm {
+    background-color: #f8d09a;
+  }
+  
+  /* Add rainy effect for rainy forecast */
+  div.weather-forecast.rainy {
+    background-image: url("rainy.jpg");
+    background-repeat: repeat-x;
+    background-size: contain;
+  }
+  
+  /* Style the forecast container */
+  div.weather-forecast {
+    margin: 20px 0;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Style the forecast content */
+  div.weather-forecast h2 {
+    margin-top: 0;
+    font-size: 28px;
+  }
+  
+  div.weather-forecast img {
+    width: 100px;
+  }
+  
+  div.weather-forecast p {
+    margin: 10px 0;
+    font-size: 18px;
+  }
+  
