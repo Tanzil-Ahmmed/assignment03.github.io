@@ -1,43 +1,99 @@
-/* Add background color based on temperature */
-div.weather-forecast {
-    background-color: #f9f9f9;
+body {
+    font-family: Arial, sans-serif;
+    background-color: #c3e3fc;
+    margin: 0;
   }
   
-  div.weather-forecast.cold {
-    background-color: #9ac4f8;
+  h1 {
+    text-align: center;
+    margin-top: 30px;
+    color: #333;
   }
   
-  div.weather-forecast.warm {
-    background-color: #f8d09a;
-  }
-  
-  /* Add rainy effect for rainy forecast */
-  div.weather-forecast.rainy {
-    background-image: url("rainy.jpg");
-    background-repeat: repeat-x;
-    background-size: contain;
-  }
-  
-  /* Style the forecast container */
-  div.weather-forecast {
+  #search {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     margin: 20px 0;
+  }
+  
+  #search-box {
+    padding: 10px;
+    border: none;
+    border-radius: 20px 0 0 20px;
+    font-size: 16px;
+    outline: none;
+    width: 300px;
+  }
+  
+  #search-button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 0 20px 20px 0;
+    font-size: 16px;
+    background-color: #4CAF50;
+    color: #fff;
+    cursor: pointer;
+    outline: none;
+  }
+  
+  #search-button:hover {
+    background-color: #3e8e41;
+  }
+  
+  #weather {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 20px;
+  }
+  
+  .forecast {
+    background-color: #fff;
+    border-radius: 5px;
     padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin: 20px;
+    width: 200px;
+    text-align: center;
+    box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.75);
   }
   
-  /* Style the forecast content */
-  div.weather-forecast h2 {
-    margin-top: 0;
-    font-size: 28px;
+  .forecast h2 {
+    font-size: 20px;
+    margin-bottom: 10px;
+   
   }
   
-  div.weather-forecast img {
-    width: 100px;
+  .forecast img {
+    width: 50px;
+    height: 50px;
   }
   
-  div.weather-forecast p {
-    margin: 10px 0;
-    font-size: 18px;
+  .forecast .temperature {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+  
+  .forecast .description {
+    font-size: 16px;
+  }
+  
+  .forecast .rainy {
+    background: url('rainy.jpg') #9fa9a3;
+    color: #fff;
+    text-shadow: 0px 0px 5px rgba(0,0,0,0.75);
+  }
+  
+  .forecast .sunny {
+    background: url('warm.jpg') #f9d71c;
+    color: #333;
+    text-shadow: 0px 0px 5px rgba(255,255,255,0.75);
+  }
+  
+  .forecast .cloudy {
+    background: url('cloudy.jpg') #c0c0c0;
+    color: #fff;
+    text-shadow: 0px 0px 5px rgba(0,0,0,0.75);
   }
   
